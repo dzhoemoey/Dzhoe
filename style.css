@@ -97,7 +97,6 @@
 
         .theme-toggle {
             background: none;
-            margin-left: 150px;
             border: none;
             color: var(--text-color);
             font-size: 20px;
@@ -109,6 +108,8 @@
             border-radius: 50%;
             width: 36px;
             height: 36px;
+            margin-left: auto;
+            margin-right: 10px;
         }
 
         .theme-toggle:hover {
@@ -420,6 +421,69 @@
             color: var(--gray);
             line-height: 1.7;
             margin-top: 15px;
+        }
+
+        /* Bot Hosting Section */
+        .bot-hosting {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 50px auto;
+            max-width: 800px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bot-hosting::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--secondary), var(--primary));
+        }
+
+        .bot-hosting-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bot-hosting-title i {
+            color: var(--secondary);
+            font-size: 28px;
+        }
+
+        .bot-hosting-desc {
+            font-size: 16px;
+            color: var(--gray);
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .bot-hosting-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .bot-hosting-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
         }
 
         /* Pricing Section */
@@ -958,6 +1022,11 @@
             transform: translateY(0);
         }
 
+        /* Smooth scroll animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
         /* Responsive Styles */
         @media (max-width: 1200px) {
             .hero h1 {
@@ -1026,6 +1095,10 @@
             .cta h2 {
                 font-size: 30px;
             }
+            
+            .bot-hosting {
+                padding: 30px 20px;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1071,4 +1144,25 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
+            
+            .bot-hosting-title {
+                font-size: 20px;
+            }
+            .dark-logo {
+             display: none;
+            }
+
+            [data-theme="dark"] .light-logo {
+            display: none;
+            }
+
+            [data-theme="dark"] .dark-logo {
+            display: block;
+            }
+
+             .logo-image {
+              height: 140%;
+              width: auto;
+              transition: opacity 0.3s ease;
+           }
         }
