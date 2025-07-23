@@ -6,23 +6,24 @@
     <title>Sameko Saba - Bot WhatsApp Serbaguna</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo-container">
-                <a href="#" class="logo">
-                    <img src="https://qu.ax/GAHZT.png" alt="Sameko Saba Logo" class="logo-image">
-                </a>
-                <button class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-sun sun-icon"></i>
-                    <i class="fas fa-moon moon-icon"></i>
-                </button>
-            </div>
+    <div class="logo-container">
+        <a href="#" class="logo">
+            <img src="https://qu.ax/GAHZT.png" alt="Sameko Saba Logo" class="logo-image light-logo">
+            <img src="https://qu.ax/itRWi.png" alt="Sameko Saba Logo" class="logo-image dark-logo">
+        </a>
+    </div>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
             <nav class="nav-desktop">
                 <a href="#features">Fitur</a>
                 <a href="#pricing">Harga</a>
@@ -128,6 +129,13 @@
                     <p class="feature-desc">Dashboard lengkap untuk melacak kinerja bot dan interaksi pengguna.</p>
                 </div>
             </div>
+
+            <!-- Bot Hosting Section -->
+            <div class="bot-hosting animate" style="animation-delay: 0.3s;">
+                <h3 class="bot-hosting-title"><i class="fas fa-server"></i> Bot Hosting</h3>
+                <p class="bot-hosting-desc">Koneksikan nomor kamu dengan fitur .jadibot &lt;nomor&gt;, dan login ke WhatsApp Gateway untuk kelola bot kamu dengan mudah. Nikmati kontrol penuh atas bot WhatsApp Anda sendiri!</p>
+                <a href="https://renkamoe.my.id" class="bot-hosting-btn">Login ke WhatsApp Gateway</a>
+            </div>
         </div>
     </section>
 
@@ -171,7 +179,7 @@
                             <i class="fas fa-crown"></i>
                         </div>
                         <h3 class="pricing-title">Premium</h3>
-                        <div class="pricing-price">Rp20.000<span>/bulan</span></div>
+                        <div class="pricing-price">Rp50.000<span>/bulan</span></div>
                         <p>Solusi lengkap untuk kebutuhan pribadi</p>
                     </div>
                     <div class="pricing-features">
@@ -179,10 +187,13 @@
                             <i class="fas fa-check"></i> <span>Akses semua fitur premium</span>
                         </div>
                         <div class="pricing-feature">
+                            <i class="fas fa-check"></i> <span>Invite bot selama 7 hari</span>
+                        </div>
+                        <div class="pricing-feature">
                             <i class="fas fa-check"></i> <span>Limit unlimited</span>
                         </div>
                         <div class="pricing-feature">
-                            <i class="fas fa-check"></i> <span>Tambahan fitur premium</span>
+                            <i class="fas fa-check"></i> <span>VIP JADIBOT</span>
                         </div>
                         <div class="pricing-feature">
                             <i class="fas fa-check"></i> <span>Dukungan prioritas 24/7</span>
@@ -197,7 +208,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <h3 class="pricing-title">Enterprise</h3>
-                        <div class="pricing-price">Rp50.000<span>/bulan</span></div>
+                        <div class="pricing-price">Rp100.000<span>/bulan</span></div>
                         <p>Solusi khusus untuk kebutuhan besar</p>
                     </div>
                     <div class="pricing-features">
@@ -205,10 +216,13 @@
                             <i class="fas fa-check"></i> <span>Akses semua fitur premium</span>
                         </div>
                         <div class="pricing-feature">
-                            <i class="fas fa-check"></i> <span>Bebas invite bot ke group maksimal 3</span>
+                            <i class="fas fa-check"></i> <span>Invite bot selama 50 hari</span>
                         </div>
                         <div class="pricing-feature">
-                            <i class="fas fa-check"></i> <span>Akses antrean jadibot cepat</span>
+                            <i class="fas fa-check"></i> <span>Dukungan prioritas 24/7</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i> <span>VVIP JADIBOT</span>
                         </div>
                         <div class="pricing-feature">
                             <i class="fas fa-check"></i> <span>Limit unlimited</span>
@@ -348,7 +362,7 @@
         <div class="container">
             <h2 class="animate">Siap Mengubah Cara Anda Menggunakan WhatsApp?</h2>
             <p class="animate" style="animation-delay: 0.2s;">Bergabunglah dengan ribuan pengguna yang telah merasakan kemudahan Sameko Saba</p>
-            <a href="https://wa.me/62882008078024" class="btn animate" style="animation-delay: 0.4s;">Mulai Sekarang - Gratis!</a>
+            <a href="#pricing" class="btn animate" style="animation-delay: 0.4s;">Mulai Sekarang - Gratis!</a>
         </div>
     </section>
 
@@ -389,7 +403,7 @@
                 <div class="footer-links-group">
                     <h3 class="footer-title">Kontak</h3>
                     <ul class="footer-links">
-                        <li class="footer-link"><a href="mailto:support@dzhoeid.my.id"><i class="fas fa-envelope"></i> support@dzhoeid.my.id</a></li>
+                        <li class="footer-link"><a href="mailto:dzhoecoder@gmail.com"><i class="fas fa-envelope"></i> admin@dzhoeid.my.id</a></li>
                         <li class="footer-link"><a href="tel:+62882005373160"><i class="fas fa-phone"></i> +62 882-0053-73160</a></li>
                         <li class="footer-link"><a href="#"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</a></li>
                     </ul>
@@ -422,6 +436,6 @@
             </a>
         </div>
     </nav>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
